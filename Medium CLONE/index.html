@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/caraousel.css">
+    <link rel="stylesheet" href="css/trending-articles.css">
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+/* we use a single conatiner for the stuff which is below the navbar */
+    .container {
+            width: 1200px;
+            margin: auto;
+            height: 500px;
+            /* border: 1px solid black; */
+            margin-top: 90px;
+            font-family: sans-serif;
+        }
+        .yellow-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 400px;
+            border: 1px solid rgb(8, 1, 1);
+            width: 100%;
+            height: 630px;
+        background-color: rgb(247, 160, 0);
+        z-index: -1;
+        }
+        .separation-line{
+            margin-top :50px;
+            width:100vw;
+            position:relative;
+            border-bottom: 1px solid rgb(205, 205, 45);
+
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar start -->
+<nav class="navbar">
+<div class="nav-logo"> 
+    <div class="nav-image">
+
+    </div> </div>
+<div class="nav-links">
+
+<a class="nav-item" href="">Our Story</a>
+<a class="nav-item" href="">Membership</a>
+<a class="nav-item" href="">Write</a>
+<a class="nav-item" href="">Sign in</a>
+<button class="get-started"><span>Get Started</span>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+</button>
+</div>
+</nav>
+
+<!-- navbar ends -->
+
+<!-- YELLOW BOX STARTS -->
+<div class="yellow-container"></div>
+
+<!-- YELLOW BOX ENDS -->
+
+
+<!-- container starts here -->
+<div class="container">
+    <!-- CAROUSEL STARTS ------------------------------------------------------------------------------->
+    <div class="carousel">   
+     <h1 class="carousel-heading">Stay Curious</h1>
+     <div class="carousel-text">Discover stories, thinking, and expertise from writers on any topic.</div>
+    <button class="carousel-button">Start Reading</button>
+    </div>
+    <!-- CAROUSEL ENDS ---------------------------->
+
+<!-- trending cards -->
+  <div class="trending-articles">
+     <div class="trending-heading">
+        <img src="data:image/png;base64,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"
+         alt="">
+          <strong>Trending on medium</strong>
+     </div>
+     <div class="article-list">
+     <div class="article article1">
+        <div class="article-no">01</div>
+        <div class="article-detail">
+            <div class="article-detail-1">
+                <img src="data:image/png;base64,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"
+                 alt="">
+                 <strong>Admiral Cloudberg</strong>
+             
+            </div>
+            <div class="article-detail-2">
+               I quit murdering people for 7 days.Here's what happened
+
+            </div>
+            <div class="article-detail-3">
+                <span class="article-date">16 jan &nbsp;&sdot;
+                </span>
+                <span class="article-read-time">3 min read</span>
+ 
+             </div>
+
+        </div>
+     </div>
+     <div class="article article2"><div class="article-no">02</div>
+     <div class="article-detail">
+         <div class="article-detail-1">
+             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR4AAACwCAMAAADudvHOAAAAbFBMVEX////j4+Pi4uIAAADh4eHq6ur29vb6+vrv7+/z8/Pp6enm5ubx8fH7+/uFhYWYmJiPj4+3t7ewsLCioqKoqKjIyMiQkJCamprAwMC5ubkLCwvLy8uysrIUFBTS0tLCwsIdHR1ubm4nJydlZWXEoPA/AAANnklEQVR4nO1d7WKcNhA8FMTXQWzHdhw3adw07/+OhQOtVmikFedzc9jiT+uNhhHDIlbLSnc40KELc2hrVGSsyFaRUdmGDUKTTTE0GYtUNOOuk7mP1LAFaMjdeWhrOOgFq1x5ZqviF1hGuqgUv0BzSlee5ZQlQyNuYmHo+gxuR54Yd5I8hULeo1K9Rwneg+8/Gc9Cx7mR90DuC8lDd5DfA9RFQpep8ojiJnMTukyVR2V5sjxZnizP9coD4x4YuTASEzXBVzN+74GX64aoCb3YMVqSh1rG5SnVfJSMpFyMZcm9xzQsObpcbBytTEt+/01DB20asi4qwF0j7oZOydHEzeRB3A3iLmbjQdPR1tVytNZoTFXdkK2xxs6iyYbQVY/QydwSmmwVQ9MpBXRPRp97DC7NAW6RG1yaQ3SPxVagW+QGtq/hJrTjHlHuDqDZszf43PABh+NfdGiCYy9Cnzf2wqHJGOHYC7n9wcUdmnzuLE+WJ8uT5cnyZHn2JQ+96RUIi3nsoVHkUlLEKUUuKCS33CBygWgFgmoY92BuEPcI3A0dFHu2rTWyuJdsNsysALp6FVribqJozA2NadxWzvicS6E5l+tcZSq69NHQuUo6pegepqE/a4JzrgTnmltyeXJCwxpzvifLk+XJ8mR5sjzvUh77SRvIo/6gPOgr+dvKQycUqiTgN3YB3cbRb1mhUbzmS8U491juhvD0aNPQcQ+aFnL16JSsD3TX3XmPxz2GxT53Q9wO2jTk17+d2wnJ19yFYUHyKNDFAsmjCtDFkhfRQP83cNTFdSoeXCDgLg239PTEudVA8hjsH0xoFNLY+4YJjSLne2Ly5HRYlifLcz3yREkuKA+1TEWfV4IB5aGWUXGJRKzMjcpzXnVktIvplZmXl4fQ0SoROd9JDf0KlYRU/HbuC2ZLDXe0BKGmgypUusYaOypRqcjWkq1jaDJyNDVsyVbZUwrcmhpyNODuLfdg0ancVN8CuK2c+EuNKvwbDFPxVGOCvtQo99kzpwQ32B25U52LbEKFisDtjNwnC5cndXB5Xdk3Ln+LDy7sg4o2n1pYw9p+f0Hoj1L2XX5KP24phfBx0mHHdHluPqA8G/T5kPJMz9dfWZ6gPMP3NHX+pDwo7qfeSPLEZyzie69L1Oft5HED2xkJl7s5JQiUaBNyrSYlp+RkOuCuy+P3JHme7OX46cAAtz/nOLR02OqNHhlbYIQNk9HM2G9Atz9T/Oe2ugQ3q62XwmJY/gTQ8dJrGFQnz7nmG3xM0Ocz4kZBdbw6Bj7g157vSXi/fwboD5IOGw46yxPlbrI8Ue4uyxPlFvT56PIcxvd75A324eXpvv/9P3jPsm+CGxaPpsnqh8WqWMU9i7FcoU9WUAYAg2ql/MB2XaGydJJHLsefEX2cuGfuDvhCrxC3YtxHOnhCj4wH8y3+0JCNV4lY9ADQZBtnrMbW2FNaNOsiQwvczX2a9/SFRW/nNocuzeG4hzE6nyLMwdAKoMnmOpePbhC3Eri/xIbmJ3s5jnv43D01dJxr1eqV1WHx+b5UPASHJvgRjdA6qs4oD9GgwUWubzmZJHmuLd9jLlDpp6g6HzQdZuRpBHX2L4/i4/42eZS+EdTZvzz64RF0MUWeBHV2L0/349On7+fIo4oEdfYuj76bLuJxeb7S5Rkbpqizc3n0j/kqHtddlL0nSZ03kCe9QgXkO7ehjTpGH5jvxGj9Fanx9M/aoNOypfFc66Hrjt10jNMCW+cxmyYrFYQMY2C/NNTW2JmWDnoxHo81Q5tTTujDi72O52nG0A6Am6MX7k4f4Ezi5XBc6fOZSnOG3uE2PafrjnGzpQdnFc+REXhwuOz7kX/r/KE3+H/7gNUZ3dednybP2DH3+WXf4ocsMaHx6F7cnY4nFQx6GpXhk/VtbuT4jzdjD8lzXfmeolurM+rTJckzxsq3SJ0v9dLqLO+5LnlU66kz6mPTBzF5sO/80PMFDod+9/KoOd5ZH480v4jIg33nh7ajR2/Hn13Kw97oAX3C8mj8ZOmSvRbs+LxLecJJGjP/CsqD1Rlfe0deevvTjM+iPOidG5Hn/yj7DvnOdLzM/oPRZdB3Vvf/OOrz1ybvSSv7Fnd/o00y5BKExbouQSi7aILvJczdlAF1uonLCYuPi/+IJQjEEy37pjKOnso3+tZWcvSsqMM34f/Fp+zbGo7K9vhWY+7xPzWOd06AFXel/p3+7bYGl9NHLwdwWzkDG/RsLfsuwxUqL+gSV84ANiacMuIwN/iy5l7c4xQfPtlJIJhziWXfZs7F5EkdXM4s+/4mqTMNJQCtjjjescGAyz2c9LGp+Ost++byiL4z6wPkCbyzItz9P/vK96ghSZ3xontPnuYzaninY9ztvuTRz2nqfPr0vJYnGCsPYe7x+brfjzwKR4M3gQHXfMCdhYW+MyVBBO6COnnt8mB1PusDTIt+OzB58JM1+s51yJO+xUhY3A6msG6bER3Qhy4w6DtFKXHDlbjJH5ET5SEStCJLSd85VRF8sm71qYvw+Vr8J6hOF7pAcakplIdsoOwbpIOPdsnhYPPGbMkhNew42uRuOXr8u4e+87WZEtnjKBPwnwne9VCd52ZKEx9RKtpJg1PemCeTTc4apcFBEj297PvcDxkwGnya0WNLHNQ8jIOLwtLRp1Xb89fsevm2Zd9Crnk4wDf6E+MO6RP4Umxj5fewCwJU597hDujTwifrm+XevTwFfrKMOhQWQ31+I+MdD6r3Lk8X9R3LjYMbpI4Wd3/ajzwavrNu2AUaauw/QB0xsNmPPFidW7TUvMDxj6fOlezAcgl5AuqAjEUx5bllfe6muPXy8iSm4s8rHg2+2LE6X1G+ay69jhUpn9TpimMJd56D+S5Qcn6O95iaXjcVjwqXqSUPC0Hhcn1qE1KnROhTF+P63HVq6qS743S47Hm12zUoXHa452NA1738ky09Lxomsl80P1TWyPrgFq7DrPvpnWXRhcsdHZ/HaHD6kj7UlnsIcc+ntDRsS0lrtOgeltyvr+80JT35pnODi9nqL5pQxars+4RV87MXeaNXgY0JQ/Hh6aAixGnZg0LoU5e8Z0+thiZ/0YT9gFuU3pP7Rpuhh30nmnMJ6mNLWK9sS9mz5ImpE+1i4Pm6q9+PPEULn6yHpC5CfZ47abnXjuTB7yw7k4h3EejzrMU9Q/cjT+CNbhsKXazW7/dn7SaTdi2PhtHLjd6w5OR+pU6xqmvesTwhdTatyLl31FHXIg/MltJP7Uj1LdPfWJ2v2g1sCx/t5jvt8znOJFS54feJxGypyE3iziUI/faNSqBx+qvGo/Igo529T/rapFEfq2Tu83se2/OF7XrtryVeTUmX6BJOSU/+D2u/HpZbhPwfcJ8C2yXNzBbsLDG5OCWl3b6lKWl0t++LJzQmdEQdaU3JetZ80ucn4O4E9NbBJTRjv/Rm6C1eGPywRieuhhz1YcUI+DvfjtJhKuo72+Upuu98Hfve5cHR4IOPTt4k4ihx70ieQLyDunixPTT2II+KqdMA9F7leUXZ9xFmMJ6aa9ntm2zbd/u25c9SZS7cznk+ut/Ad/QqavJD8uSS8/jPlaPdvjG3UPYNuGmr607aUhtuBm624/61Vue+HU9pG6LNwIfXccPtvO0pGTrGraPcVs54hYpY9r3S5wt3Ljxjg6XX8Fdd5TlX8g9vRrnfsOy7+uWr8wa7fW/4GYPkoQmF5BdPaOhfnjobLnD7i+3y8rxtvsfq88VDv9cfv0uXR5E+X3x0lmf8c9bnAaCzPMWiz1MF0Fmek6H5faMR+r3Kg3bcruhX+ZSH7o5SfQve1nA7N0gHyr+smL7bdxmUxw0L/S7C3wbFPzxJd3CVLV13EXIXJoOKZo2rOQeQB3kPlMecsvRzrULkxjcJIZv07NlTCmjbsAVoiRuha2sE65lA3BdAFxdKpoKn5/p+3W1HW4zsNd+T5cnyZHmyPFmeLM8u5EEZy+hqwDJ5NaCYLaUcaOp6vvKC2dI07ooOVtJhjaykg2ysziMd3b4K/ae4rZzpi0UrdIvsJpMSmj7fpKbi5cWiZJPKnxRCb0zF72E76ytJaGR5sjxZnixPlifLc8XyoMgFlH3Hf3Ac1Le4QXU89nAuEKCTuS9T9l3bQJFqOlhISTbdUsvWFn9AdI3QxlRbtH4dd4XQiJuCYc7NouYI+qCWiU/CnMs0BLMmuOulOO9R1BKgUYVK6aKRe0S52drQgloC9KV2YCE0KkETdz+y3OfUmES5zyv7tuiP9KUi53uyPFmeLM9e5Xnj3b6hPNQyFX1e2TeUh1rGy75BF0ke99VsrKL3zFZVIDRc7iaHBYCb5HHTgTFutNwNcpesmRcWCgs2U1PxydnSDdxCWDigPC/erxqk4sFm6PbYnmuGW8nL6kVzzfD6k8u+U9cUyHOu2cjlMS7oPj2Lt8KRGxTwKDS4uPVd5pRg9FTo6YGlVxu4nacnxn2hhAYc/wqALgD6nLH3HVTFoy6+r3xPlifLk+XJ8vxBec6qzDUb+8NXM37vJefaUquCA9ypS02FN1e8xkQqQYC51khYuNoUMRIWwqC6BGGhm2uNhIVlan0LrSXlayqdjDWtBmUZa28t6Slb7qE7+2ucTr47thoUcnO0v5aUcdsEfDp3769EJe7/ABBSbzfroh6zAAAAAElFTkSuQmCC"
+              alt="">
+              <div class="author-detail">
+                <span class="author">Admiral Cloudberg
+            <div class="about-author">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ea.
+            </span>
+            </div>
+        </div>
+          
+         </div>
+         <div class="article-detail-2">
+            I quit murdering people for 7 days.Here's what happened.Adding more text hereeeeeeeeeeeeeeeeeee
+
+         </div>
+         <div class="article-detail-3">
+             <span class="article-date">16 jan &nbsp;&sdot;
+             </span>
+             <span class="article-read-time">3 min read</span>
+
+          </div>
+
+     </div></div>
+     <div class="article article3">
+        <div class="article-no">03</div>
+        <div class="article-detail">
+            <div class="article-detail-1">
+                <img src="data:image/png;base64,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"
+                 alt="">
+                 <strong>Admiral Cloudberg</strong>
+             
+            </div>
+            <div class="article-detail-2">
+               I quit murdering people for 7 days.Here's what happened
+
+            </div>
+            <div class="article-detail-3">
+                <span class="article-date">16 jan &nbsp;&sdot;
+                </span>
+                <span class="article-read-time">3 min read</span>
+ 
+             </div>
+
+        </div>
+     </div>
+     <div class="article article4">
+        <div class="article-no">04</div>
+        <div class="article-detail">
+            <div class="article-detail-1">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR4AAACwCAMAAADudvHOAAAAbFBMVEX////j4+Pi4uIAAADh4eHq6ur29vb6+vrv7+/z8/Pp6enm5ubx8fH7+/uFhYWYmJiPj4+3t7ewsLCioqKoqKjIyMiQkJCamprAwMC5ubkLCwvLy8uysrIUFBTS0tLCwsIdHR1ubm4nJydlZWXEoPA/AAANnklEQVR4nO1d7WKcNhA8FMTXQWzHdhw3adw07/+OhQOtVmikFedzc9jiT+uNhhHDIlbLSnc40KELc2hrVGSsyFaRUdmGDUKTTTE0GYtUNOOuk7mP1LAFaMjdeWhrOOgFq1x5ZqviF1hGuqgUv0BzSlee5ZQlQyNuYmHo+gxuR54Yd5I8hULeo1K9Rwneg+8/Gc9Cx7mR90DuC8lDd5DfA9RFQpep8ojiJnMTukyVR2V5sjxZnizP9coD4x4YuTASEzXBVzN+74GX64aoCb3YMVqSh1rG5SnVfJSMpFyMZcm9xzQsObpcbBytTEt+/01DB20asi4qwF0j7oZOydHEzeRB3A3iLmbjQdPR1tVytNZoTFXdkK2xxs6iyYbQVY/QydwSmmwVQ9MpBXRPRp97DC7NAW6RG1yaQ3SPxVagW+QGtq/hJrTjHlHuDqDZszf43PABh+NfdGiCYy9Cnzf2wqHJGOHYC7n9wcUdmnzuLE+WJ8uT5cnyZHn2JQ+96RUIi3nsoVHkUlLEKUUuKCS33CBygWgFgmoY92BuEPcI3A0dFHu2rTWyuJdsNsysALp6FVribqJozA2NadxWzvicS6E5l+tcZSq69NHQuUo6pegepqE/a4JzrgTnmltyeXJCwxpzvifLk+XJ8mR5sjzvUh77SRvIo/6gPOgr+dvKQycUqiTgN3YB3cbRb1mhUbzmS8U491juhvD0aNPQcQ+aFnL16JSsD3TX3XmPxz2GxT53Q9wO2jTk17+d2wnJ19yFYUHyKNDFAsmjCtDFkhfRQP83cNTFdSoeXCDgLg239PTEudVA8hjsH0xoFNLY+4YJjSLne2Ly5HRYlifLcz3yREkuKA+1TEWfV4IB5aGWUXGJRKzMjcpzXnVktIvplZmXl4fQ0SoROd9JDf0KlYRU/HbuC2ZLDXe0BKGmgypUusYaOypRqcjWkq1jaDJyNDVsyVbZUwrcmhpyNODuLfdg0ancVN8CuK2c+EuNKvwbDFPxVGOCvtQo99kzpwQ32B25U52LbEKFisDtjNwnC5cndXB5Xdk3Ln+LDy7sg4o2n1pYw9p+f0Hoj1L2XX5KP24phfBx0mHHdHluPqA8G/T5kPJMz9dfWZ6gPMP3NHX+pDwo7qfeSPLEZyzie69L1Oft5HED2xkJl7s5JQiUaBNyrSYlp+RkOuCuy+P3JHme7OX46cAAtz/nOLR02OqNHhlbYIQNk9HM2G9Atz9T/Oe2ugQ3q62XwmJY/gTQ8dJrGFQnz7nmG3xM0Ocz4kZBdbw6Bj7g157vSXi/fwboD5IOGw46yxPlbrI8Ue4uyxPlFvT56PIcxvd75A324eXpvv/9P3jPsm+CGxaPpsnqh8WqWMU9i7FcoU9WUAYAg2ql/MB2XaGydJJHLsefEX2cuGfuDvhCrxC3YtxHOnhCj4wH8y3+0JCNV4lY9ADQZBtnrMbW2FNaNOsiQwvczX2a9/SFRW/nNocuzeG4hzE6nyLMwdAKoMnmOpePbhC3Eri/xIbmJ3s5jnv43D01dJxr1eqV1WHx+b5UPASHJvgRjdA6qs4oD9GgwUWubzmZJHmuLd9jLlDpp6g6HzQdZuRpBHX2L4/i4/42eZS+EdTZvzz64RF0MUWeBHV2L0/349On7+fIo4oEdfYuj76bLuJxeb7S5Rkbpqizc3n0j/kqHtddlL0nSZ03kCe9QgXkO7ehjTpGH5jvxGj9Fanx9M/aoNOypfFc66Hrjt10jNMCW+cxmyYrFYQMY2C/NNTW2JmWDnoxHo81Q5tTTujDi72O52nG0A6Am6MX7k4f4Ezi5XBc6fOZSnOG3uE2PafrjnGzpQdnFc+REXhwuOz7kX/r/KE3+H/7gNUZ3dednybP2DH3+WXf4ocsMaHx6F7cnY4nFQx6GpXhk/VtbuT4jzdjD8lzXfmeolurM+rTJckzxsq3SJ0v9dLqLO+5LnlU66kz6mPTBzF5sO/80PMFDod+9/KoOd5ZH480v4jIg33nh7ajR2/Hn13Kw97oAX3C8mj8ZOmSvRbs+LxLecJJGjP/CsqD1Rlfe0deevvTjM+iPOidG5Hn/yj7DvnOdLzM/oPRZdB3Vvf/OOrz1ybvSSv7Fnd/o00y5BKExbouQSi7aILvJczdlAF1uonLCYuPi/+IJQjEEy37pjKOnso3+tZWcvSsqMM34f/Fp+zbGo7K9vhWY+7xPzWOd06AFXel/p3+7bYGl9NHLwdwWzkDG/RsLfsuwxUqL+gSV84ANiacMuIwN/iy5l7c4xQfPtlJIJhziWXfZs7F5EkdXM4s+/4mqTMNJQCtjjjescGAyz2c9LGp+Ost++byiL4z6wPkCbyzItz9P/vK96ghSZ3xontPnuYzaninY9ztvuTRz2nqfPr0vJYnGCsPYe7x+brfjzwKR4M3gQHXfMCdhYW+MyVBBO6COnnt8mB1PusDTIt+OzB58JM1+s51yJO+xUhY3A6msG6bER3Qhy4w6DtFKXHDlbjJH5ET5SEStCJLSd85VRF8sm71qYvw+Vr8J6hOF7pAcakplIdsoOwbpIOPdsnhYPPGbMkhNew42uRuOXr8u4e+87WZEtnjKBPwnwne9VCd52ZKEx9RKtpJg1PemCeTTc4apcFBEj297PvcDxkwGnya0WNLHNQ8jIOLwtLRp1Xb89fsevm2Zd9Crnk4wDf6E+MO6RP4Umxj5fewCwJU597hDujTwifrm+XevTwFfrKMOhQWQ31+I+MdD6r3Lk8X9R3LjYMbpI4Wd3/ajzwavrNu2AUaauw/QB0xsNmPPFidW7TUvMDxj6fOlezAcgl5AuqAjEUx5bllfe6muPXy8iSm4s8rHg2+2LE6X1G+ay69jhUpn9TpimMJd56D+S5Qcn6O95iaXjcVjwqXqSUPC0Hhcn1qE1KnROhTF+P63HVq6qS743S47Hm12zUoXHa452NA1738ky09Lxomsl80P1TWyPrgFq7DrPvpnWXRhcsdHZ/HaHD6kj7UlnsIcc+ntDRsS0lrtOgeltyvr+80JT35pnODi9nqL5pQxars+4RV87MXeaNXgY0JQ/Hh6aAixGnZg0LoU5e8Z0+thiZ/0YT9gFuU3pP7Rpuhh30nmnMJ6mNLWK9sS9mz5ImpE+1i4Pm6q9+PPEULn6yHpC5CfZ47abnXjuTB7yw7k4h3EejzrMU9Q/cjT+CNbhsKXazW7/dn7SaTdi2PhtHLjd6w5OR+pU6xqmvesTwhdTatyLl31FHXIg/MltJP7Uj1LdPfWJ2v2g1sCx/t5jvt8znOJFS54feJxGypyE3iziUI/faNSqBx+qvGo/Igo529T/rapFEfq2Tu83se2/OF7XrtryVeTUmX6BJOSU/+D2u/HpZbhPwfcJ8C2yXNzBbsLDG5OCWl3b6lKWl0t++LJzQmdEQdaU3JetZ80ucn4O4E9NbBJTRjv/Rm6C1eGPywRieuhhz1YcUI+DvfjtJhKuo72+Upuu98Hfve5cHR4IOPTt4k4ihx70ieQLyDunixPTT2II+KqdMA9F7leUXZ9xFmMJ6aa9ntm2zbd/u25c9SZS7cznk+ut/Ad/QqavJD8uSS8/jPlaPdvjG3UPYNuGmr607aUhtuBm624/61Vue+HU9pG6LNwIfXccPtvO0pGTrGraPcVs54hYpY9r3S5wt3Ljxjg6XX8Fdd5TlX8g9vRrnfsOy7+uWr8wa7fW/4GYPkoQmF5BdPaOhfnjobLnD7i+3y8rxtvsfq88VDv9cfv0uXR5E+X3x0lmf8c9bnAaCzPMWiz1MF0Fmek6H5faMR+r3Kg3bcruhX+ZSH7o5SfQve1nA7N0gHyr+smL7bdxmUxw0L/S7C3wbFPzxJd3CVLV13EXIXJoOKZo2rOQeQB3kPlMecsvRzrULkxjcJIZv07NlTCmjbsAVoiRuha2sE65lA3BdAFxdKpoKn5/p+3W1HW4zsNd+T5cnyZHmyPFmeLM8u5EEZy+hqwDJ5NaCYLaUcaOp6vvKC2dI07ooOVtJhjaykg2ysziMd3b4K/ae4rZzpi0UrdIvsJpMSmj7fpKbi5cWiZJPKnxRCb0zF72E76ytJaGR5sjxZnixPlifLc8XyoMgFlH3Hf3Ac1Le4QXU89nAuEKCTuS9T9l3bQJFqOlhISTbdUsvWFn9AdI3QxlRbtH4dd4XQiJuCYc7NouYI+qCWiU/CnMs0BLMmuOulOO9R1BKgUYVK6aKRe0S52drQgloC9KV2YCE0KkETdz+y3OfUmES5zyv7tuiP9KUi53uyPFmeLM9e5Xnj3b6hPNQyFX1e2TeUh1rGy75BF0ke99VsrKL3zFZVIDRc7iaHBYCb5HHTgTFutNwNcpesmRcWCgs2U1PxydnSDdxCWDigPC/erxqk4sFm6PbYnmuGW8nL6kVzzfD6k8u+U9cUyHOu2cjlMS7oPj2Lt8KRGxTwKDS4uPVd5pRg9FTo6YGlVxu4nacnxn2hhAYc/wqALgD6nLH3HVTFoy6+r3xPlifLk+XJ8vxBec6qzDUb+8NXM37vJefaUquCA9ypS02FN1e8xkQqQYC51khYuNoUMRIWwqC6BGGhm2uNhIVlan0LrSXlayqdjDWtBmUZa28t6Slb7qE7+2ucTr47thoUcnO0v5aUcdsEfDp3769EJe7/ABBSbzfroh6zAAAAAElFTkSuQmCC"
+                 alt="">
+                 <strong>Admiral Cloudberg</strong>
+             
+            </div>
+            <div class="article-detail-2">
+               I quit murdering people for 7 days.Here's what happened
+
+            </div>
+            <div class="article-detail-3">
+                <span class="article-date">16 jan &nbsp;&sdot;
+                </span>
+                <span class="article-read-time">3 min read</span>
+ 
+             </div>
+
+        </div>
+     </div>
+     <div class="article article5">
+        <div class="article-no">05</div>
+        <div class="article-detail">
+            <div class="article-detail-1">
+                <img src="data:image/png;base64,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"
+                 alt="">
+                 <strong>Admiral Cloudberg</strong>
+             
+            </div>
+            <div class="article-detail-2">
+               I quit murdering people for 7 days.Here's what happened
+
+            </div>
+            <div class="article-detail-3">
+                <span class="article-date">16 jan &nbsp;&sdot;
+                </span>
+                <span class="article-read-time">3 min read</span>
+ 
+             </div>
+
+        </div>
+     </div>
+     <div class="article  article6">
+        <div class="article-no">06</div>
+     <div class="article-detail">
+         <div class="article-detail-1">
+             <img src="data:image/png;base64,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"
+              alt="">
+              <strong>Admiral Cloudberg</strong>
+          
+         </div>
+         <div class="article-detail-2">
+            I quit murdering people for 7 days.Here's what happened
+
+         </div>
+         <div class="article-detail-3">
+             <span class="article-date">16 jan &nbsp;&sdot;
+             </span>
+             <span class="article-read-time">3 min read</span>
+
+          </div>
+
+     </div></div>
+
+
+    </div>
+    <div class="separation-line"></div>
+     <div class="main-articles">
+  <div class="article-container"></div>
+  <div class="articles-list"></div>
+    </div>
+
+   </div>
+</div>
+
+
+</div>
+
+<!-- container ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CONATINER ENDS HERE -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+.trending-articles{
+    margin-top: 200px;
+}
+.article-list{
+    border: 2px solid black;
+    width: 100%;
+    margin-top: 1px;
+    display: flex;
+    flex-wrap:wrap;
+    gap:20px 0; 
+    justify-content: space-between;
+}
+.article{
+width: 30%;
+/* border: 1px solid black; */
+height: 100px;
+display:flex;
+}
+/* .trending-articles::before{
+
+    background-image: url();
+} */
+.trending-heading img{
+    height: 30px;
+    margin-bottom: 5px;
+}
+/* use flex to align logo and text wrt hzntl axis */
+.trending-heading{
+    display: flex;
+    align-items: center;
+}
+.article{
+    display: flex;
+    gap: 10px ;
+}
+.article-no{
+    /* border: 1px solid black; */
+    color:#ccc;
+    font-size: 35px;
+}
+.article-detail{
+    /* border: 1px solid rgb(17, 194, 85); */
+    flex-grow: 1;
+}
+.article-detail-1{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.article-detail-1 img{
+    height: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    gap:5px;
+    align-items: center;
+    
+}
+.article-detail-2{
+    font-weight: 600;
+    margin-bottom: 5px;
+    height: 38px;
+    overflow:clip;
+}
+.article-detail-3{
+    /* border: 1px solid rgb(9, 6, 6); */
+    font-weight: 300;
+    color:#7e7b7b
+}
+.article-read-time::after{
+    content: "✨";
+}
+/* this belwo is the card which will appear when hovered */
+.about-author{
+    border: 1px solid black;
+    position: absolute;
+    z-index: 1;
+    background-color:white;
+    height: 50px;
+    width: 150px;
+    /* heght and width dena padega if we want to shift the card left or right */
+    top: -26px;
+    right: -157px;
+    display: none;
+    /* display none to make it disppear and use lvha property to make it appear when hovered  */
+}
+.author{
+    position: relative;
+
+}
+.author:hover .about-author{
+    display:inline;
+}
+.main-articles{
+    display:flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    margin-top:100px;
+}
+.article-container{
+    border: 1px solid black;
+    width: 60%;
+    height:1500px;
+
+
+}
+.articles-list{
+    height: 350px;
+    width:30%;
+    border: 1px solid black;
+
+
+}

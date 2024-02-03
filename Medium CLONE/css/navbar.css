@@ -1,0 +1,86 @@
+.navbar{
+    height:80px;
+    border:1px solid black;
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+    position: fixed;
+    /* making navbar fixed on top */
+    top: 0;
+    width: 100%;
+}
+.nav-logo{
+    width:200px;
+    height:100%;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    border:1px solid orange;
+    width:500px;
+    display:flex;
+    justify-content: space-around ;
+    align-items: center;
+}
+/* .nav-logo{
+    /* background-image:url(https://miro.medium.com/v2/resize:fit:8978/1*s986xIGqhfsN8U--09_AdA.png); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat;  we use div to centre image*/
+
+
+.nav-image{
+    height:50%;
+    width:80%;
+    /* border:1px solid black; */
+    background-image:url(https://miro.medium.com/v2/resize:fit:8978/1*s986xIGqhfsN8U--09_AdA.png); 
+     background-size: contain; 
+     background-repeat: no-repeat; 
+}
+.nav-item{
+    /* border:1px solid black; */
+    height:20px;
+    font-size: 20px;
+
+}
+.get-started{
+    height: 30px;
+    width: 90px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    position: relative;
+    /* position given as we need circle around the button */
+    
+}
+.circle1,.circle2{
+    position: absolute;
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    background-color: black;
+    top:-2px;
+    
+}
+.circle1{
+    left: -15px;
+}
+.circle2{
+    right:-15px;
+}
+.get-started:hover{
+    cursor: pointer;
+}
+.nav-item:link{
+    text-decoration: none;
+
+}
+.get-started span{
+    z-index: 1;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+}
+
